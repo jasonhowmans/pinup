@@ -13,8 +13,7 @@
         ],
 
     "background": {
-        "page": "background.html",
-        //"scripts": ["lib/helpers.js", "lib/event.js"],
+        "scripts": ["lib/helpers.js", "lib/event.js"],
         "persistent": false
         },
 

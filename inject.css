@@ -1,0 +1,25 @@
+/*          ______    ___    ___      ___    ___   ___    ______
+ *        /      /  /   /  /    \   /   /  /   / /   /  /      /
+ *       /  /_  /  /   /  /      \ /   /  /   / /   /  /  /_  /
+ *      /   _ _/  /   /  /   /\   /   /  /   / /   /  /   _ _/
+ *     /  /      /   /  /   /  \     /  /    _    /  /  /
+ *    /__/      /___/  /___/    \___/   \________/  /__/
+ *   ------------------------------------------------------------
+ *                   Take snaps with your browser
+ *   ------------------------------------------------------------
+ *   
+ *   CSS file will be injected into tab on execution
+ */
+
+
+/* Change body tag to hide scrollbar, and move manually with css */
+body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
