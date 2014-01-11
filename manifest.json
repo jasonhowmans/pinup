@@ -13,14 +13,14 @@
         ],
 
     "background": {
-        //"page": "background.html",
-        "scripts": ["vendor/html2canvas.min.js", "lib/helpers.js", "lib/event.js"],
+        "page": "background.html",
+        //"scripts": ["lib/helpers.js", "lib/event.js"],
         "persistent": false
         },
 
     "content_scripts": [{
         "matches": ["http://*/*", "https://*/*"],
-        "js": ["lib/inject.js", "vendor/html2canvas.min.js"]
+        "js": ["lib/inject.js"]
         }],
 
     "browser_action": {
