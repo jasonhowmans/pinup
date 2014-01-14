@@ -18,10 +18,11 @@ Done:
 - ✓ Native screen capture process (this is not ideal right now as it uses 'captureVisibleTab', which only captures the visible frame. This means the page has to be scrolled to splice all of the images together, and this is noticeable to the user).
 - ✓ Storage library with the ability to add multiple services (currently only Dropbox is supported).
 - ✓ Authenticate client & upload captures using Dropbox.
+- ✓ Use the chrome.storage API to store meta information about the captures.
 
 To to:
-- ✗ Use the Dropbox Datastore API to store meta information about the captures.
 - ✗ Design and build library area, where user can browse and manage 'pinups'.
 - ✗ Design a better icon.
 - ✗ Unit Testing.
+- ✗ Code refactoring.
 - ✗ Publish to the Chrome store (expected by 31st Jan 2014).
