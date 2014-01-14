@@ -4,16 +4,22 @@
     "name": "Pinup",
     "description": "The easiest way to capture websites",
     "version": "0.1",
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApPWCfgrs72dyC+gIyXgvbvBHne+2jdvw8BzfszrI0wFmoAzNM2Wq4YtIjFwABK6SpVjTmBetayza5q1/E3QYLuCA5z8TXaReH/5XwqaUZYaTbllpS7IGnk4et/GZO5gWioP8zfJ57WXP2v/EOYGOJaK7qf076sMr1BHW7TiliVb/AFYc0UHurmakyLGM4ONM8TEeqj8O6i1tYuYmY8vVURIif8yBJ3UzHDK3CjFep21erWwzB1wYBUBiNek5CWs4rpLAVkl5BMXy3QJtd+3GyDbJs25XPAqy1gmGX5bxLMJ2SkQlMU777Jx9e5Fw2b1lBOPDirPAB5PFb9kL1zBF1QIDAQAB",
+
+    "options_page": "client/options.html",
 
     "permissions": [
         "tabs",
         "activeTab",
+        "notifications",
+        "storage",
+        "identity",
         "http://*/*",
         "https://*/*"
         ],
 
     "background": {
-        "scripts": ["lib/helpers.js", "lib/event.js"],
+        "scripts": ["vendor/dropbox.min.js", "lib/helpers.js", "lib/storage.js", "lib/capture.js", "lib/event.js"],
         "persistent": false
         },
 
@@ -26,6 +32,8 @@
         "default_icon": "icon.png"
         },
 
-    "web_accessible_resources": [ "inject.css" ]
-
+    "web_accessible_resources": [ 
+        "client/chrome_oauth_receiver.html",
+        "inject.css"
+    ]
 }
