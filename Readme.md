@@ -25,4 +25,4 @@ To to:
 - ✗ Design a better icon.
 - ✗ Unit Testing.
 - ✗ Code refactoring.
-- ✗ Publish to the Chrome store (expected by 31st Jan 2014).
+- ✗ Publish to the Chrome store
